@@ -1,0 +1,105 @@
+.container__creative {
+    margin: 0 auto;
+    width: 1440px;
+    height: 970px;
+    background: url(./images/creative__img.png) center center / contain no-repeat transparent;
+}
+
+.container__wrapper {
+    margin-left: 135px;
+    padding-top: 292px;
+    width: 1055px;
+}
+
+.creative {
+    &__title {
+        margin: 0 0 0 30px;
+        font-family: 'montserratregular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 88px;
+        letter-spacing: 2.1px;
+        color: #FFFFFF;
+    }
+    &__title-color {
+        color: #377DFF;
+    }
+    &__text {
+        margin-top: 35px;
+        margin-bottom: 56px;
+        max-width: 550px;
+        font-family: 'poppinsregular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    &__icon {
+        padding-right: 27px;
+        border-right: 3px solid #377DFF;
+        margin-left: 11px;
+        font-family: 'poppinsregular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 140px;
+        line-height: 131px;
+        color: rgba(255, 255, 255, 0.13);
+    }
+}
+
+.button {
+    &__now {
+        display: inline-block;
+        margin-right: 5px;
+        width: 156px;
+        height: 50px;
+        font-family: 'poppinsregular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        background: #377DFF;
+        border-radius: 35px;
+        color: #FFFFFF;
+        transition: .2s;
+        &:hover {
+            border: 2px solid #377DFF;
+            background-color: transparent;
+        }
+        &:active {
+            color: #377DFF;
+        }
+    }
+    &__more {
+        display: inline-block;
+        width: 156px;
+        height: 50px;
+        font-family: 'poppinsregular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 48px;
+        text-align: center;
+        border: 2px solid #377DFF;
+        border-radius: 35px;
+        text-decoration: none;
+        color: #FFFFFF;
+        transition: .2s;
+        &:hover {
+            background-color: #377DFF;
+        }
+        &:active {
+            color: #062866;
+        }
+    }
+}
+
+.section__creative-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 736px;
+}

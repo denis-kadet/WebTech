@@ -1,0 +1,90 @@
+.container__warks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1440px;
+    height: 508px;
+}
+
+.works__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 39px;
+}
+
+.works__title {
+    margin-bottom: 89px;
+    margin-top: 0px;
+    padding-left: 39px;
+    font-family: 'montserratsemibold', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 1px;
+    border-left: 3px solid #377DFF;
+    color: #141D28;
+    &-color {
+        color: #377DFF;
+    }
+}
+
+.work__block {
+    display: flex;
+    flex-direction: column;
+}
+
+%block-img {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+}
+
+.block__img {
+    &-planning {
+        @extend %block-img;
+        background: url(./images/works_2.png) center center / contain no-repeat transparent;
+    }
+    &-design {
+        @extend %block-img;
+        background: url(./images/works_3.png) center center / contain no-repeat transparent;
+    }
+    &-dev {
+        @extend %block-img;
+        background: url(./images/works_1.png) center center / contain no-repeat transparent;
+    }
+}
+
+%works__arrow {
+    display: inline-block;
+    width: 156px;
+    height: 26px;
+}
+
+.works__arrow {
+    &-down {
+        margin: 0 53px 0 29px;
+        @extend %works__arrow;
+        background: url(./images/arraw_1.png) center center / contain no-repeat transparent;
+    }
+    &-up {
+        margin: 0 48px 0 44px;
+        @extend %works__arrow;
+        background: url(./images/arraw_2.png) center center / contain no-repeat transparent;
+        transform: translateY(-33px);
+    }
+}
+
+.block__text {
+    margin: 16px 0 0 0;
+    font-family: 'montserratregular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #141D28;
+}

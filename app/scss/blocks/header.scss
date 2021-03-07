@@ -1,0 +1,132 @@
+/*Header-up*/
+
+.container__header-up {
+    margin: 0 auto;
+    width: 1440px;
+    background-color: #141D28;
+}
+
+.header-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 250px 0 135px;
+    width: 1055px;
+    height: 60px;
+    &__tel {
+        margin-left: 21px;
+        font-family: 'montserratregular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 30px;
+        text-decoration: none;
+        color: #FFFFFF;
+        transition: .2s;
+        &:hover {
+            color: #a39f9f;
+        }
+        &:active {
+            color: #377DFF;
+        }
+    }
+}
+
+.header-up__icon {
+    width: 24px;
+    height: 24px;
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+%header__icon {
+    display: inline-block;
+}
+
+.header-up__icon-instagram {
+    @extend %header__icon;
+    background: url(./images/icons/Path.svg) center center / 12px 12px no-repeat transparent;
+}
+
+.header-up__icon-drible {
+    @extend %header__icon;
+    background: url(./images/icons/Path-1.svg) center center / 12px 12px no-repeat transparent;
+}
+
+.header-up__icon-twitter {
+    @extend %header__icon;
+    background: url(./images/icons/Path-2.svg) center center / 12px 12px no-repeat transparent;
+}
+
+.header-up__icon-youtube {
+    @extend %header__icon;
+    background: url(./images/icons/Path-3.svg) center center / 12px 12px no-repeat transparent;
+}
+
+
+/*Header-down*/
+
+.container__header-down {
+    margin: 0 auto;
+    width: 1440px;
+    background-color: #0C1117;
+}
+
+.nav {
+    width: 100%;
+    width: 708px;
+}
+
+.header-down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 250px 0 135px;
+    width: 1055px;
+    height: 75px;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    &__item {
+        list-style: none;
+    }
+    &__link {
+        font-family: 'poppinsregular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 14px;
+        letter-spacing: 0.8px;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: .2s;
+        &:hover {
+            color: #a39f9f;
+        }
+        &:active {
+            color: #377DFF;
+        }
+    }
+}
+
+.header-down__logo {
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+    &-img {
+        margin-right: 16px;
+        width: 50px;
+        height: 30px;
+    }
+    &-text {
+        width: 150px;
+        height: 30px;
+    }
+}

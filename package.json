@@ -1,0 +1,42 @@
+{
+  "name": "gulp__build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "cross-env NODE_ENV=dev gulp",
+    "build": "cross-env NODE_ENV=prod gulp build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "autoprefixer": "^10.2.4",
+    "browser-sync": "^2.26.14",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-smile-px2rem": "^0.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-uglify-es": "^2.0.0",
+    "postcss": "^8.2.6",
+    "swiper": "^6.4.15"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.1.0",
+    "jquery": "^3.6.0",
+    "node-sass": "^5.0.0",
+    "normalize.css": "^8.0.1"
+  }
+}
